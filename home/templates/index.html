@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Bottles </title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-white  text-black tracking-wide">
+  <!-- ***************************navbar starts here***************************** -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index/">
+          <span class="green-text">Green</span>Bottel
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item1 ">
+              <a class="nav-ele nav-link active" aria-current="page" href="/index/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-ele nav-link" href="/advertisement/">Advertisment</a>
+            </li>
+            <li class="nav-item">
+              <a class=" nav-ele nav-link" href="/contact/">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- *******************************************navbar ends here ******************************************-->
+
+
+  <!-- ******************************************Hero Section Starts here*******************************************  -->
+  <main>
+    <section id="home" class="sm:flex sm:justify-center">
+      <!-- design starts here  -->
+      <div class="w-80 h-80 md:hidden bg-cyan-100 absolute top-0 left-5 z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+  <div class="w-80 h-80 md:hidden bg-cyan-100 absolute bottom-10 right-0  z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+      <!-- <div class="w-80 h-80 bg-green-100 absolute bottom-10 left-0  z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+  <div class="w-80 h-80 bg-green-100 absolute top-0 right-5  z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+  <div class="w-80 h-80 bg-green-100 absolute top-0 right-15  z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>
+  <div class="w-80 h-80 bg-cyan-100 absolute bottom-0 right-15  z-10 blur-2xl opacity-30 overflow-hidden rounded-full"></div>  -->
+      <!-- design ends here  -->
+      <div class="flex flex-wrap mt-7 py-20">
+        <div class="w-full sm:w-8/12 mb-10">
+          <div class="container mx-auto h-full sm:p-10">
+            <header class="container px-4 lg:flex mt-10 items-center h-full lg:mt-0">
+              <div class="w-full text-center mb-12 md:text-left">
+                <h1 class="text-4xl md:text-6xl  leading-snug z-11">Find your <span
+                    class="text-green-700 ">Greeny</span> stuff for your Health</h1>
+                <div class="w-20 h-2 bg-green-700 my-4"></div>
+                <p class="text-xl mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae maiores
+                  neque eaque ea odit placeat, tenetur illum distinctio nulla voluptatum a corrupti beatae tempora
+                  aperiam quia id aliquam possimus aut.</p>
+                <button class=" custom-btn bg-green-500 text-white text-lg font-small px-4 py-2 rounded shadow"><a href="/advertisement" class="btn-link" >Advertise With us</a></button>
+              </div>
+            </header>
+          </div>
+        </div class="h-full w-48 ">
+        <img id="bottle-image" class="size-96 drop-shadow-lg " src="https://static.wixstatic.com/media/32b2bf_603e71b5d94244a28c3b2a9992c82b3b~mv2.png/v1/fill/w_375,h_375,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/FW_WebsiteBottles_Card_NBC_OTF_PNG.png">
+      </div>
+    </section>
+
+    <!-- ******************************************Hero Section Ends  here*******************************************  -->
+
+
+
+    <!-- *****************************************section 1*********************************** -->
+    <section id="features" class="bg-color-primary-light flex justify-center capitalize">
+ 
+      <div class="flex justify-center lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 ">
+        <!-- card no 1 -->
+        <div
+          class=" text-center py-2 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+          <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+            <img src="https://static.wixstatic.com/media/bfcb9b_8428e536e2c84887be07349a8567d661~mv2.png/v1/fill/w_104,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image.png" alt="piggy bank">
+          </div>
+          <h3 class="text-xl font-bold py-4"> Biodegradable time </h3>
+          <p class="leading-relaxed">Our product cause no harm <br> to Environment due to its less <br> er degradable time</p>
+        </div>
+        <!-- card no 2 -->
+        <div
+          class="bg-color-primary-dark   text-center py-2 px-5 rounded-2xl cursor-pointer">
+          <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+            <img src="https://static.wixstatic.com/media/bfcb9b_b49827742e3f4fd1b62d97bedd6e0d82~mv2.png/v1/fill/w_104,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image.png" alt="piggy bank">
+          </div>
+          
+          <h3 class="text-xl font-bold py-4">Save Money</h3>
+          <p class="leading-relaxed">Bottle Water costs 2,000 <br>times the price of the normal water</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <section id="features" class="bg-color-primary-light flex justify-center capitalize">
+   
+    <div class="flex justify-center lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 ">
+      <!-- card no 3 -->
+      <div
+        class=" text-center py-2 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+        <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+          <img src="https://static.wixstatic.com/media/bfcb9b_d86c93d475f044b98a98894752b2969b~mv2.png/v1/fill/w_104,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image.png" alt="piggy bank">
+        </div>
+        <h3 class="text-xl font-bold py-4"> Premium Water </h3>
+        <p class="leading-relaxed">FreeWater is natural spring water <br>and all of our containers are BPA <br>free</p>
+      </div>
+      <!-- card no 4 -->
+      <div
+      class=" text-center py-2 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark ease-in duration-200">
+      <div class="bg-color-secondary inline-block rounded-2xl py-5 px-6">
+        <img src="https://static.wixstatic.com/media/bfcb9b_918f7ef38a0a42358efab157edf47c31~mv2.png/v1/fill/w_104,h_104,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/image.png" alt="piggy bank">
+      </div>
+      <h3 class="text-xl font-bold py-4"> Save Lives </h3>
+      <p class="leading-relaxed">Ten cents from each <br> beverage is donated to<br>to charity to build water wells<br> for people in need</p>
+    </div>
+      
+    </div>
+  </div>
+  </section>
+  <!-- ***************************************************Section 1 Ends here**************************************** -->
+
+
+    <!-- ************************section 2*************************** -->
+  
+<!-- ***************************************************section 2 ends here***************************************************** -->
+
+
+
+<!-- *******************************************************Section 3 Starts here ********************************************************* -->
+
+    <section id="saving-money" class="py-8">
+      <div class="container py-20 relative">
+        <!-- <div class="blob1"></div>
+        <div class="blob2"></div> -->
+
+        <div class="flex flex-col items-center justify-between md:flex-row">
+          <div class="mb-12 md:w-1/2">
+            <img src="https://static.wixstatic.com/media/bfcb9b_54b4f8a74eee4e4295f957edee9217bd~mv2.webp" alt="">
+          </div>
+          <div class="text-center md:text-left md:w-1/2 md:ml-20">
+            <!-- <h4 class="font-bold text-color-secondary mb-4">Saving Money</h4> -->
+            <h1 class="title mb-4">We never use plastic bottles</h1>
+            <p class="leading-relaxed mb-10">Green Water comes in aluminum bottles and paper cartons of natural spring water because we didn't want to make water free and do it in a plastic bottle.</p>
+            <!-- <button class="btn">Read More</button> -->
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- *******************************************************Section 3 Ends here ********************************************************* -->
+
+
+<!-- *******************************************************Section 3 Starts here ********************************************************* -->
+
+<section id="saving-money" class="py-8">
+  <div class="container py-20 relative">
+    <!-- <div class="blob1"></div>
+    <div class="blob2"></div> -->
+
+    <div class="flex flex-col items-center justify-between md:flex-row">
+      <div class="mb-12 md:w-1/2">
+        <img class="px-7" src="https://static.wixstatic.com/media/bfcb9b_7acc406637ce4727ad0391a8ef6b86fbf000.jpg/v1/fill/w_368,h_689,al_c,q_80,usm_0.33_1.00_0.00,enc_auto/bfcb9b_7acc406637ce4727ad0391a8ef6b86fbf000.jpg" alt="">
+      </div>
+      <div class="text-center md:text-left md:w-1/2 md:ml-20">
+        <!-- <h4 class="font-bold text-color-secondary mb-4">Saving Money</h4> -->
+        <!-- <h1 class="title mb-4">We never use plastic bottles</h1> -->
+        <p class="leading-relaxed mb-10">FreeWater is an innovative advertising platform that utilizes premium spring water as a new type of advertising medium while prioritizing philanthropy and sustainability. Ten cents from each beverage is donated to charity to fight the global water crisis. We only need 10% of Americans to choose FreeWater so we can solve the global water crisis permanently.</p>
+        <!-- <button class="btn">Read More</button> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- *******************************************************Section 3 Ends here ********************************************************* -->
+
+
+
+
+<!-- *******************************************************Section 4 Starts here ********************************************************* -->
+
+
+    
+
+<!-- ******************************************Section 4 Ends here******************************** -->
+
+
+<!-- ******************************************Footer section starts here**************************** -->
+<section id="footer" style="padding-left: 2rem; padding-right: 2rem;" class="flex justify-center bg-yellow-50">
+  <div class="bg-color-primary-dark relative w-full">
+    <div class="container mx-auto sm:px-4 max-w-screen-lg py-10">
+      <div class="grid gap-10 md:grid-cols-3 pb-10">
+        <div class="space-y-6">
+          <h4 class="font-bold text-lg">About App</h4>
+          <p class="leading-relaxed">This Should Be Used To Tell A Story And Include Any Testimonials You Might Have About Your Product Or Service For Your Clients</p>
+          <div class="flex gap-5 items-center">
+            <p>Follow Us</p>
+            <i class="fa-brands fa-facebook-f cursor-pointer hover:text-color-secondary"></i>
+            <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+            <i class="fa-brands fa-youtube cursor-pointer hover:text-color-secondary"></i>
+            <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+          </div>
+        </div>
+        <div class="flex justify-between md:justify-around">
+          <div class="space-y-6">
+            <h4 class="font-bold text-lg">Quick Links</h4>
+            <ul class="space-y-3">
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">Home</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#features">Features</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#testimonial">Testimonial</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#pricing">Pricing</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#blog">Blog</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="space-y-6">
+            <h4 class="font-bold text-lg">Help</h4>
+            <ul class="space-y-3">
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#">About Us</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#features">Partners</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#testimonial">Career</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#pricing">Reviews</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#blog">Terms & Conditions</a></li>
+              <li class="underline hover:no-underline hover:text-color-secondary"><a href="#contact">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="space-y-6">
+          <h4 class="font-bold text-lg">Newsletter</h4>
+          <p class="leading-relaxed">Subscribe With Email And Loads Of News Will Be Sent To You</p>
+          <div class="flex items-center">
+            <input type="text" class="w-3/4 text-color-gray bg-color-white p-2 lg:p-3 rounded-l-md focus:outline-none" placeholder="Enter Your Email">
+            <button type="submit" class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-3 rounded-r-md hover:opacity-90">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center pt-10 border-t border-color-gray">
+        <p>2024 &copy; LightCode. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  </main>
+
+  <script src="{% static 'script.js' %}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
