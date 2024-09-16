@@ -23,9 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!rv1^)r#ti8d1l0am5b@qrtrql*surxhgy$dhvqks0o3x!l8b@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app','.now.sh']
+
+ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
+
 
 
 # Application definition
@@ -120,13 +122,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 import os
+
 STATIC_URL = '/static/'
-STATIC_ROOT= os.path.join(BASE_DIR,'staticfiles')
-STATICFILES_DIR = {
-    os.path.join(BASE_DIR, "public/static"),#For uploading files we use static files
-}
-MEDIA_ROOT = os.path.join(BASE_DIR,"public/static")#for uploading of  pdf or some other files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "public/static"),
+]
+
+# Media files
 MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, "public/media")
 
 
 # Default primary key field type
